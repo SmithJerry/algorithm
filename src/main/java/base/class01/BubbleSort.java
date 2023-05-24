@@ -20,9 +20,9 @@ public class BubbleSort {
     }
 
     private static void swap(int[] arr, int i, int j) {
-        int tmp = arr[i] ^ arr[j];
-        arr[i] = tmp ^ arr[i];
-        arr[j] = tmp ^ arr[i];
+        arr[i] = arr[i] ^ arr[j];
+        arr[j] = arr[i] ^ arr[j];
+        arr[i] = arr[i] ^ arr[j];
     }
 
     public static void main(String[] args) {

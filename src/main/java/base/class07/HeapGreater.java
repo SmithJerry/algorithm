@@ -15,7 +15,7 @@ import java.util.List;
  */
 public class HeapGreater<T> {
     private ArrayList<T> heap;
-    private HashMap<T, Integer> indexMap;
+    private HashMap<T, Integer> indexMap;// 记录数据在堆上得什么位置
     private int heapSize;
     private Comparator<? super T> comp;
 

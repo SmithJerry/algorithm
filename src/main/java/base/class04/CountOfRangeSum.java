@@ -1,5 +1,7 @@
 package base.class04;
 
+import java.util.List;
+
 /**
  * @author Liang
  * @date 2023/5/26 - 12:22
@@ -69,5 +71,11 @@ public class CountOfRangeSum {
         }
 
         return ans;
+    }
+
+    public static void function(List<Integer> list){
+        for(int i = 0; i < list.size(); i++){
+
+        }
     }
 }

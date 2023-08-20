@@ -152,5 +152,7 @@ public class HeapSort {
         printArray(arr);
         heapSort(arr);
         printArray(arr);
+        Arrays.sort(arr);
+
     }
 }

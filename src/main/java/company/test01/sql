@@ -1,0 +1,14 @@
+SELECT * FROM wm_news_material WHERE material_id IN(
+SELECT material_id FROM wm_news_material GROUP BY material_id HAVING COUNT(material_id) >= 3);
+
+/*
+SELECT w1.* FROM wm_news_material AS w1 INNER JOIN
+wm_news_material AS w2 ON w1.`type` = w2.`type` AND
+w2.ord >= w1.ord GROUP BY w1.`type`, w1.`ord`
+HAVING COUNT(*) <= 2
+ORDER BY w1.`ord` ASC
+
+SELECT * FROM wm_news_material w1
+WHERE(SELECT COUNT(*) FROM wm_news_material WHERE
+TYPE = w1.type AND ORD >= w1.ord) <= 2
+*/

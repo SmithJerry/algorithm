@@ -12,8 +12,8 @@ public class 二叉树从左往右输出从右往左输出 {
         private TreeNode left;
         private TreeNode right;
 
-        public TreeNode(int val){
-            this.val = val;
+        public TreeNode(int v){
+
         }
     }
     public List<List<Integer>> levelOrder(TreeNode root) {

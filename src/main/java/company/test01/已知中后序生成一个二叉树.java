@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * @author Liang
  * @date 2023/9/7 - 9:08
- * 根据中序后序确定一个二叉树
+ * 根据中序后序确定一个二叉树leecode106
  */
 public class 已知中后序生成一个二叉树 {
     public static class Node{
